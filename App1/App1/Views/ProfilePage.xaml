@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="StackLayoutMain" >
+            <Image Source="Group36" VerticalOptions="StartAndExpand" Margin="0,0,0,0"></Image>
+            <StackLayout VerticalOptions="StartAndExpand" Margin="0,-50,0,0">
+            <StackLayout Orientation="Horizontal" >
+                <Image Source="Name_Ico" HorizontalOptions="Start" Margin="30,0,0,0"/>
+                <Label x:Name="UserName" Text="" VerticalOptions="StartAndExpand" Margin="10,20,0,15" FontSize="18" TextColor="Black"
+                HorizontalOptions="Start" />
+            </StackLayout>
+            <Line BackgroundColor="#BCBCBC" HeightRequest="1" Margin="0,0,0,0"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="EmaiI_Icon" HorizontalOptions="Start" Margin="30,0,0,0"/>
+                <Label x:Name="Email" Text="" VerticalOptions="StartAndExpand" Margin="10,20,0,15" FontSize="18" TextColor="Black"
+                HorizontalOptions="Start" />
+            </StackLayout>
+            <Line BackgroundColor="#BCBCBC" HeightRequest="1" Margin="0,0,0,0"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="Role_Icon" HorizontalOptions="Start" Margin="30,0,0,0"/>
+                <Label x:Name="Role" Text="" VerticalOptions="StartAndExpand" Margin="10,20,0,15" FontSize="18" TextColor="Black"
+                HorizontalOptions="Start" />
+            </StackLayout>
+            <Line BackgroundColor="#BCBCBC" HeightRequest="1" Margin="0,0,0,0"/>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="DateReg_Icon" HorizontalOptions="Start" Margin="30,0,0,0"/>
+                <Label x:Name="RegistrationDate" Text="" VerticalOptions="StartAndExpand" Margin="10,20,0,15" FontSize="18" TextColor="Black"
+                HorizontalOptions="Start" />
+            </StackLayout>
+            <Line BackgroundColor="#BCBCBC" HeightRequest="1" Margin="0,0,0,0"/>
+            </StackLayout>
+            
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.AboutPage">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout >
+        <ScrollView>
+            <CollectionView x:Name="myCollectionView" SelectionMode="Single" SelectionChanged="myCollectionView_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="1" RowDefinitions="Auto, *" ColumnDefinitions="Auto, *" >
+                            <Frame BackgroundColor="#ffff"  CornerRadius="10">
+                                <StackLayout>
+                                    <Image Source="{Binding Image}"  WidthRequest="320" Grid.Row="0" HeightRequest="200">
+                                    </Image>
+                                    <Label Text="{Binding Heading}" HorizontalTextAlignment="left" FontAttributes="Bold" TextColor="Black" FontSize="17" Margin="2,0" Grid.Row="1"/>
+                                    <Label Text="{Binding Category}" HorizontalTextAlignment="Right" FontAttributes="Bold" TextColor="#00214C" FontSize="14" HorizontalOptions="End" Grid.Row="2"/>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                        
+                                        <Label Text="{Binding Watches}" HorizontalTextAlignment="left"  TextColor="#00214C" FontSize="14" HorizontalOptions="End" Grid.Row="2" />
+                                        <Image Source="WatchesIco" HorizontalOptions="End"/>
+                                    </StackLayout>
+                                    
+                                    
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

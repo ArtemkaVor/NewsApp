@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.NewsView">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image x:Name="img" Source="" />
+
+                <StackLayout x:Name="StackLayoutNewsView">
+                    <Label x:Name="CategoryView"  Text="Category"
+                VerticalOptions="Start" 
+                HorizontalOptions="StartAndExpand" TextColor="Black" FontSize="17" Margin="20, 20"/>
+                    <Label x:Name="txt"  Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" TextColor="Black" FontSize="17" Margin="20, 0" WidthRequest="501"/>
+                    <StackLayout Padding="10" Background="White" HeightRequest="100" WidthRequest="150" Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="User" WidthRequest="50" HeightRequest="50"  Margin="10,0,0,0"/>
+                            <Label x:Name="UserName" Text="Не авторизирован" TextColor="Black" MaxLines="100" />
+                        </StackLayout>
+                        <Entry x:Name="EntryComment"  HeightRequest="50" Completed="Editor_Completed" PlaceholderColor="Black" Placeholder="Введите комментарий" TextColor="Black"/>
+
+                    </StackLayout>
+                    <StackLayout x:Name="commentStack">
+                        
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.RegistrPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#0088e6"
+                          Offset="0.1" />
+                    <GradientStop Color="#00214C"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </StackLayout.Background>
+            <StackLayout Orientation="Vertical" Padding="25, 70, 25 ,20">
+                <Entry x:Name="DisplayNameEntry" Placeholder="Ваше Имя" PlaceholderColor="#9cf"/>
+                <Entry x:Name="EmailEntry" Placeholder="Email" PlaceholderColor="#9cf"/>
+                <Entry x:Name="PasswordEntry" Placeholder="Пароль" IsPassword="True" PlaceholderColor="#9cf"/>
+                <Entry x:Name="PasswordEntry2" Placeholder="Повторите пароль" IsPassword="True" PlaceholderColor="#9cf"/>
+                
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Padding="25, 0, 25 ,20" >
+                <Button Text="Зарегистрироваться" Clicked="Button_Clicked" CornerRadius="150" Background="White" TextColor="#0088E6"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

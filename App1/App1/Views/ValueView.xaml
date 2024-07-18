@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ValueView">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame CornerRadius="15" Margin="30, 40">
+                <Grid>
+                    <Label Text="Американский доллар" HorizontalTextAlignment="Center" TextColor="#00214C"/>
+                    <Label Grid.Row="1" x:Name="usdtxt" Text="НЕ РАБОТАЕТ" TextColor="#0088E6" FontSize="24" Margin="40, 0" HorizontalTextAlignment="Center"/>
+                </Grid>
+            </Frame>
+            <Frame CornerRadius="15" Margin="30, 40" >
+                <Grid>
+                    <Label Text="Евро" HorizontalTextAlignment="Center" TextColor="#00214C"/>
+                    <Label Grid.Row="1" x:Name="eurtxt" Text="Eror" TextColor="#0088E6" HorizontalTextAlignment="Center" FontSize="24"  FontFamily="Montserrat Alternates"/>
+                </Grid>
+            </Frame>
+            <Frame CornerRadius="15" Margin="30, 40" >
+                <Grid>
+                    <Label Text="Выбранная валюта" HorizontalTextAlignment="Center" TextColor="#00214C" x:Name="UserKurseName"/>
+                    <Label Grid.Row="1" x:Name="UserKursChange" Text="0" TextColor="#0088E6" HorizontalTextAlignment="Center" FontSize="24"  FontFamily="Montserrat Alternates"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

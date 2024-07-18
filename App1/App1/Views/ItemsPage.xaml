@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ItemsPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:App1.ViewModels"  
+             xmlns:model="clr-namespace:App1.Models"  
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="drawable\NewsLogoWhite.png" />
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout>
+            <Frame CornerRadius="15" Margin="30, 40">
+                <Grid>
+                    <Label Grid.Row="0" Text="Новосибирск" TextColor="#00214C" FontSize="36" HorizontalTextAlignment="Center"/>
+                    <Label Grid.Row="1" x:Name="temperaturetxt" Text="Eror" TextColor="#00214C" FontSize="44" Margin="60, 0, 0, 0" Grid.Column="0"/>
+                    <Image Grid.Row="1" x:Name="WeatherImage"  Source="Rain" HorizontalOptions="End" Margin="0,0,50,0" />
+                    <Label Grid.Row="2" x:Name="SostWeather" Text="Eror" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="32" Padding="0" FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="4" x:Name="pressuretxt" Text="Eror" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="17" FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="3" x:Name="fealsliketxt" Text="Eror" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="17" Padding="0" FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="5" x:Name="humiditytxt" Text="Eror" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="17" Padding="0" FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="6" x:Name="windspeedtxt" Text="Eror" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="17" Padding="0" FontFamily="Montserrat Alternates"/>
+                </Grid>
+            </Frame>
+            <Frame CornerRadius="15" Margin="30, 0" HorizontalOptions="Center" >
+                <Grid Margin="10,-40">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Margin="0,35" Grid.Column="0" x:Name="DateDay1" Text="DateDay1" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates" Padding="10"/>
+                    <Label Grid.Row="0" Margin="0,35" Grid.Column="1" x:Name="DateDay2" Text="DateDay2" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates" Padding="10"/>
+                    <Label Grid.Row="0" Margin="0,35" Grid.Column="2" x:Name="DateDay3" Text="DateDay3" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates" Padding="10"/>
+                    <Label Grid.Row="0" Margin="0,35" Grid.Column="3" x:Name="DateDay4" Text="DateDay4" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates" Padding="10"/>
+                    <Image x:Name="WeatherImageForecast1" Grid.Row="1" Grid.Column="0" Source="clouds" />
+                    <Image x:Name="WeatherImageForecast2" Grid.Row="1" Grid.Column="1" Source="clouds" />
+                    <Image x:Name="WeatherImageForecast3" Grid.Row="1" Grid.Column="2" Source="clouds" />
+                    <Image x:Name="WeatherImageForecast4" Grid.Row="1" Grid.Column="3" Source="clouds" />
+                    <Label Grid.Row="2" Grid.Column="0" x:Name="EveningTempDay1" Text="EvnTmpD1" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="2" Grid.Column="1" x:Name="EveningTempDay2" Text="EvnTmpD2" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="2" Grid.Column="2" x:Name="EveningTempDay3" Text="EvnTmpD3" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="2" Grid.Column="3" x:Name="EveningTempDay4" Text="EvnTmpD4" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="3" Grid.Column="0" x:Name="NightTempDay1" Text="NghtTmpD1" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="3" Grid.Column="1" x:Name="NightTempDay2" Text="NghtTmpD2" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="3" Grid.Column="2" x:Name="NightTempDay3" Text="NghtTmpD3" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                    <Label Grid.Row="3" Grid.Column="3" x:Name="NightTempDay4" Text="NghtTmpD4" TextColor="#00214C" HorizontalTextAlignment="Center" FontSize="20"  FontFamily="Montserrat Alternates"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+    
+
+
+</ContentPage>
